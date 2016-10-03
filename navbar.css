@@ -10,6 +10,7 @@
     padding: 5px;
     color: white;
     background-color:black
+    
 }
 #navbar a {
     color: white
@@ -42,8 +43,8 @@ opacity: 0.8;
     filter: alpha(opacity=50); /* For IE8 and earlier */
     
 }
-body{
-    margin:0px;
+.biopt2{
+    font-size: 12px;
 }
 
 .bio{
@@ -57,4 +58,11 @@ body{
     position: fixed;
     left:450px;
     top: 70px;
+}
+
+.intsabox{
+    position:fixed;
+    right: 305px;
+    font-size: 30px;
+    color:white;
 }
