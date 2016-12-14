@@ -1,0 +1,30 @@
+/* navbar */
+#navbar {
+    text-align: center;
+    background-color:black;
+}
+
+#navbar li {
+    display:solid block;
+    display:inline-block;
+    border: 10px solid black;
+    padding: 5px;
+    color: white;
+    background-color:black
+    
+}
+#navbar a {
+    color: white
+}
+
+#inp{
+height:50px;
+Width:600px;
+font-size:25px;
+text-align:center;
+}
+
+#btn{
+    width:80px;
+    height:60px;
+}

@@ -1,0 +1,38 @@
+/* Dropdown Button*/
+#num1 {
+    padding:8px;
+}
+
+#selector {
+    color: black;
+    padding: 8px;
+    font-size: 16px;
+}
+#num2 {
+    padding:8px;
+}
+#solve {
+    padding:8px;
+}
+
+
+
+
+/* navbar */
+#navbar {
+    text-align: center;
+    background-color:black;
+}
+
+#navbar li {
+    display:solid block;
+    display:inline-block;
+    border: 10px solid black;
+    padding: 5px;
+    color: white;
+    background-color:black
+    
+}
+#navbar a {
+    color: white
+}
