@@ -69,11 +69,15 @@
        </script>
           <body bgcolor="#4561e0">
           
+          <hr>
+          
        <h2>How its made: Calculator</h2>
-       <hr>
        
-       <h2>How its made: Todo List</h2>
-       <hr>
-       
-
+       To start making the Calculator you are going to need to start three new files called calc.html, calc.css and calc.js. First on the html file you are going to to want to create an input box using the input tag of &lt;input&gt; but you will need to give the box a id to differentiate each input box, I give the box the idea of num1 because its were my first number will go for the calculation. After the first input box is made yo are going to need to make a selector drop down menu to choose the different operations. To do this you will need to use the &lt;select&gt;&lt;/select&gt; tag and give it an id to later make it variable in javascript. To add each operation in the drop down menu, under the select tag use the &lt;option&gt; inside the caret after the option give the tag a value of the operation you are going to assign to it.For example if you want to an option of addition/+ you would use &lt;option value="+"&gt;+&lt;/option&gt; and display the symbol of the operation in the drop down menu you write what you want between the opening tag and the closing tag, in this case a + symbol. I made an option for each of the 6 opertion I used. After that make another input box after the drop down menu code, same as the first one but with id of num3 because this is were the second number will go in for the calculator. Then I added a button so when its clicked it displays the answer, to do this I used the button tag of, &lt;button (here is were you give the button the id of solve)&gt;(here is were you place the name of what you want to display on the user's screen) &lt;/button&gt;. In order to display the answer of the calclator is going have you are going to need a div tag with the id of display, &lt;div id = display&gt;&lt;/div&gt;. After you have done these steps you are going to need to use javascript make the calculator function, so you wil need to link the javascript in the html with &lt;script src=&quot;calc.js&quot;&gt;&lt;/script&gt;. 
+  <br>
+      <img src="image/calccode.png"/>
+  <br>
+  Once you are done coding the html side of the calculator, you are going to use javascript to make the code talk within itself to give you your answer. To start you are going have to make a variable for every id having to do with the calculator. You do this by using var then give your variable a name. After that you will link that variable with the id using document.getElementById(placing the id here), repeat until every id is connected to a variable(ex:var num1input = document.getElementById(&quot;num1&quot;)). Then you will need to add an event listener to listen for a click on the solve button using solve.addEventListener("click", function(){})., with solve being the variable. Then after the event listener you will need to add two more variable connecting the input boxes so the javascript can read what is in the two input boxes, var num1 = num1input.value; var num2 = num2input.value;. Finally, all you need to do it the if else statement to tell javascript if a certain symbol is in the select box of drop down menu to do that operation and if the symbol isnt there to read the next if else statement. To add two numbers you will use, if the selector value = "+", var answer = +num1 + +num2, and then use display.innerhtml= answer to display the answer on screen. The final javascript code should look like the picture below.
+  <br>
+<img src="image/calcjs.png"/>
 </html>

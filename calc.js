@@ -1,9 +1,10 @@
+//varibles for inputs, solve button and display
 var num1input = document.getElementById("num1");
 var selector = document.getElementById("selector");
 var num2input = document.getElementById("num2");
 var solve = document.getElementById("solve");
 var display = document.getElementById("display");
-
+//event listener:click
 solve.addEventListener("click", function(){
   var num1 = num1input.value;
   var num2 = num2input.value;
