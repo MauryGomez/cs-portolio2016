@@ -13,6 +13,7 @@
 }
 #solve {
     padding:8px;
+    color:green;
 }
 
 
@@ -35,4 +36,7 @@
 }
 #navbar a {
     color: white
+}
+#display{
+    font-size:30px;
 }

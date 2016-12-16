@@ -9,4 +9,4 @@ btn.addEventListener("click",function(){
 
 disp.addEventListener("click", function(evt){
     evt.target.parentNode.removeChild(evt.target);
-})3
+})

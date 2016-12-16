@@ -3,7 +3,7 @@
 <html>
     <head>
            <meta charset="UTF-8">
-    <title>How To</title>
+    <title>How To Page</title>
     <link rel="stylesheet" href="navbar.css" type="text/css" />
     </head>
     <style>
@@ -26,21 +26,54 @@
     <center><h1>How To Page</h1></center>
     <h2>How its made: Navbar</h2>
     When first starting this website, I learned how to put together the navbar that is at the top of each page. First I needed to enter the tag ul to make an unordered list. After, I needed to add in the links under the ul tag to redirect the user to different parts of my page. Using the link tag and the href, I entered the links to redirect the users to the other pages on my site, after the ending carrot for the href tag I added the word that will display to the user for them to interact with. This can be seen in my code below. When mousing over the code below, will show the navbar as the code is telling it to,without css. 
-    <div>
-    
-      <!--<img src="image/navbar.png"; style="width400px;height:200px;"-->
-       <img src="image/navbar.png" onmouseover="this.src='image/navbarnocss.png'" onmouseout="this.src='image/navbar.png'"/>
+     <!--<img src="image/navbar.png"; style="width400px;height:200px;"-->
+      <div onmouseover="navBarst()" onmouseout="navBarfn()">
+      <img id="navBarfst" src="image/navbar.png" />
+      
+       
     </div>
     <hr>
     <h2>Decorating the Navbar</h2>
-    To decorating or add aesthetics to the navbar you will either need to make a style tag or what I did, is using css in an external page to style the navbar. Fisrt, I used the text-align:center; to center the navbar options. Then I used background-color:black; to color the back ground of the navbar black. After that I started a new section relating to the links in the navbar, using the display css property to show the navbar link in a certain way, in this case, I wanted the links to be solid blocks(so you would use display:solid block;), and in a horizontal line (using display:inline-block;). For the border and padding property, I used it to change the size of my border and padding around each text in my navbar.
+    To decorate or add aesthetics to the navbar you will either need to make a style tag or what I did, is using css in an external page to style the navbar. Fisrt, I used the text-align:center; to center the navbar options. Then I used background-color:black; to color the back ground of the navbar black. After that I started a new section relating to the links in the navbar, using the display css property to show the navbar link in a certain way, in this case, I wanted the links to be solid blocks(so you would use display:solid block;), and in a horizontal line (using display:inline-block;). For the border and padding property, I used it to change the size of my border and padding around each text in my navbar.
    
    <!-- <div><img src="image/navbardec.png"; style="width400px;height:200px;"</div> -->
   
-     <img src="image/navbarpic.png" onmouseover="this.src='image/navbardec.png'" onmouseout="this.src='image/navbarpic.png'"/>
+  <div  onmouseover="navBarDesc()" onmouseout="navBarPic()">
+      <img id="navBarinfo" src="image/navbarpic.png" />
+  </div>
+     
      <hr>
-    <body bgcolor="#4561e0">
-        
+    <h2>How its made: Hardware Page</h2>
+        From my hardware page I need to desrcibe all the components needed to make computer. Which is the motherboard, CPU, RAM, PSU, HDD, the BUS system and whatever Peripherals you need. The same process is used to make every section of the hardware page, changing the picture and the desrciption. To make the title of the hardware page I used the tag &lt;h1&gt;&lt;/h1&gt; and between the opening and closing tags, I wrote Computer Hardware to create the first header or title. Then I used the tag &lt;h2&gt;&lt;/h2&gt;to create my subheader of "Motherboard" to make a smaller title. Under the &lt;h2&gt;&lt;/h2&gt; you can start typing for the description of, in this case, the Motherboard. Then to add the picture I found the picture I want and saved it on my computer and the inserted it to my images file then used &lt;img src=&quot;image/motherboard.png&quot; img tag is use to tell the file is a picture and src=image/ is tell the computer the picture is in the image file the then insert the name of the picture file. Then to resize the picture I used the style tag to set the width and the height of the picture; style=&quot;width:304px;height:228px;&quot;. Finally, to section off the part I wrote, I used the &lt;hr&gt; tag to make a line under everthing above the tag.
+      <img src="image/hwcode.png" />
+      <!--could not get the function to work for this pic and hwpic.png-->
+       </div>
+       <script>
+           function navBarDesc(){
+               document.getElementById("navBarinfo").src = 'image/navbardec.png';
+           }
+    
+            function navBarPic(){
+                
+                document.getElementById("navBarinfo").src =  'image/navbarpic.png';
+            }     
+            
+       function navBarst(){
+               document.getElementById("navBarfst").src = 'image/navbarnocss.png';
+           }
+    
+            function navBarfn(){
+                document.getElementById("navBarfst").src =  'image/navbar.png';
+            }
+          
+       </script>
+          <body bgcolor="#4561e0">
+          
+       <h2>How its made: Calculator</h2>
+       <hr>
+       
+       <h2>How its made: Todo List</h2>
+       <hr>
        
 
 </html>
