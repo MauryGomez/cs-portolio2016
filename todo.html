@@ -1,29 +1,41 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Todo List</title>
     <link rel="stylesheet" href="todo.css" type="text/css" />
 </head>
+
 <body>
-     <ul id="navbar">
-     <li><a href="index.html"> About Me </a></li>
-     <li><a href="hardware.html">Hardware</a>  </li>
-     <li><a href="calc.html">Calculator</a>  </li>
-     <li><a href="todo.html">Todo List</a>  </li>
-     <li><a href="vind.html">Vindinium</a>  </li>
-     <li><a href="bigproject.html">Big Project</a>  </li>
-      <li><a href="howto.html">How To</a>  </li>
- </ul>
+    <ul id="navbar">
+        <li><a href="index.html"> About Me </a></li>
+        <li><a href="hardware.html">Hardware</a> </li>
+        <li><a href="calc.html">Calculator</a> </li>
+        <li><a href="todo.html">Todo List</a> </li>
+        <li><a href="vind.html">Vindinium</a> </li>
+        <li><a href="bigproject.html">Big Project</a> </li>
+        <li><a href="howto.html">How To</a> </li>
+    </ul>
 </body>
- <input id="inp">
-  
-  <button id="btn"> Add to list </button>
-  
-  <div id="disp"></div>
-  
+
+<input id="todo">
+
+<select id=color>
+        <option value ="pink">pink</option>
+        <option value ="red">red</option>
+        <option value ="black">black</option>
+        <option value ="green">green</option>
+    </select>
+
+<button id="list">List Item</button>
+<button id="clearBtn">Clear All</button>
+<div id="disp"></div>
+
 <body>
     <script src="todo.js"></script>
+
     <body bgcolor="#4561e0">
-</body>
+    </body>
+
 </html>

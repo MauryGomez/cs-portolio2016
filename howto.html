@@ -36,7 +36,7 @@
     <h2>Decorating the Navbar</h2>
     To decorate or add aesthetics to the navbar you will either need to make a style tag or what I did, is using css in an external page to style the navbar. Fisrt, I used the text-align:center; to center the navbar options. Then I used background-color:black; to color the back ground of the navbar black. After that I started a new section relating to the links in the navbar, using the display css property to show the navbar link in a certain way, in this case, I wanted the links to be solid blocks(so you would use display:solid block;), and in a horizontal line (using display:inline-block;). For the border and padding property, I used it to change the size of my border and padding around each text in my navbar.
    
-   <!-- <div><img src="image/navbardec.png"; style="width400px;height:200px;"</div> -->
+   <!-- <div><img src="image/navbardec.png" ; style="width400px;height:200px;"</div> -->
   
   <div  onmouseover="navBarDesc()" onmouseout="navBarPic()">
       <img id="navBarinfo" src="image/navbarpic.png" />
@@ -80,4 +80,7 @@
   Once you are done coding the html side of the calculator, you are going to use javascript to make the code talk within itself to give you your answer. To start you are going have to make a variable for every id having to do with the calculator. You do this by using var then give your variable a name. After that you will link that variable with the id using document.getElementById(placing the id here), repeat until every id is connected to a variable(ex:var num1input = document.getElementById(&quot;num1&quot;)). Then you will need to add an event listener to listen for a click on the solve button using solve.addEventListener("click", function(){})., with solve being the variable. Then after the event listener you will need to add two more variable connecting the input boxes so the javascript can read what is in the two input boxes, var num1 = num1input.value; var num2 = num2input.value;. Finally, all you need to do it the if else statement to tell javascript if a certain symbol is in the select box of drop down menu to do that operation and if the symbol isnt there to read the next if else statement. To add two numbers you will use, if the selector value = "+", var answer = +num1 + +num2, and then use display.innerhtml= answer to display the answer on screen. The final javascript code should look like the picture below.
   <br>
 <img src="image/calcjs.png"/>
+<hr>
+<h2>Vindinium</h2>
+
 </html>
