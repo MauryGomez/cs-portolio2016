@@ -81,6 +81,11 @@
   <br>
 <img src="image/calcjs.png"/>
 <hr>
-<h2>Vindinium</h2>
-
+<h2>How its made: Reflex Game</h2>
+<p> For my final project I made a reflex game to test a players reflexes and showing them their reaction time. The game consists of three simple button a start, stop and reset. To begin setting up the game I needed to set first set the stopwatch to zero so when the reset button is pressed then it know to to set back to. For the three buttons they are simple button tags each with there own id to connect the buttn to its javascript.  </p>
+<img src="image/Reflexbtn.png"/>
+<p>When the page is loaded the my fuctions are ready to use without having the functions load when the window is open the stopwatch does not know when to begin after pressing the start button. To start with creating my stopwatch I had to set up different variables to connect my hmtl with my javascript from buttons, set time to zero and random start times. To create a the thing a button will do in javascript the variable for the button(buttonStart) is used then the command for what its listening for to start the function (onclick), then the functions that would be carried out after the event listener. For my start button I made it so when the button is pressed the button is not visible, then the timer checks for what time is already on the clock and begin counting up from there. After the random set time between the start button is press and the time starts counting the start button disappears and the stop button appears. For the stop button the var for it is place for the eventlistener  to listen for a click then the function runs the clearinterval stop whatever was being done before hand and the visiblity of the stop button is hidden with the style command. </p>
+<img src="image/startstop.png"/>
+<p> For the reset button again the eventlistener is listening for a click on the reset button to run the functions. The interval is clear to stop anything that might be running from before and the number and changed back to zero using the vars seconds and Tens. Also, when the time reset so do the buttons making the stop button disappear and the start button reappear. For the final part of the javascript coding I have to tell the computer have to count up from millseconds to seconds. To do this I used if statment, if the millisecond is at 9 then the tenths spot of the milisecond increases by 1. If both millsecond spots are at 9 then the seconds will increase by 1. Lastly if the ones spot get to 9 then a lst if statment makes the tens spot in the seconds part increase by 1.  </p>
+<img src="image/reset.png"/>
 </html>
